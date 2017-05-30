@@ -2,11 +2,11 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'configurable/version'
+require 'k/configurable/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'configurable'
-  spec.version       = Configurable::VERSION
+  spec.name          = 'k-configurable'
+  spec.version       = K::Configurable::VERSION
   spec.authors       = ['Kai Kuchenbecker']
   spec.email         = ['kuchenbecker.k@gmail.com']
 
