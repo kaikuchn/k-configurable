@@ -99,7 +99,7 @@ parameters first, then named parameters.
 
 ### Define methods on configuration
 
-** Do NOT use **
+**Do NOT use**
 
 It is possible to define methods during configuration definition, however, I do
 not like the way it is implemented and really have used it only in one instance
