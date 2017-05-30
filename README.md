@@ -39,7 +39,7 @@ Include the `K::Configurable` module in the class definition body of the class
 you would like to make configurable. For example, maybe you need to wrap a
 database connection with an adapter:
 
-```
+```ruby
 class DatabaseAdapter
   # make host, port, user and password configurable
   include K::Configurable[:host, :port, :user, :password]
@@ -71,7 +71,7 @@ tedious to always have to refer to `configuration` and don't mind having those
 attribute setter and getter methods on your classes interface, then simply add
 some forwardables like this:
 
-```
+```ruby
 class DatabaseAdapter
   include K::Configurable[:host, :port, :user, :password]
   extend SingleForwardable
@@ -86,7 +86,7 @@ attribute to delegate.
 
 You can specify defaults like this:
 
-```
+```ruby
 class DatabaseAdapter
   include K::Configurable[:user, :password, host: 'localhost', port: 12345]
 end
